@@ -5,7 +5,13 @@ const fetch = require("node-fetch");
 const helmet = require("helmet");
 const path = require("path");
 
-app.use(helmet.frameguard());
+//use helmet for security
+app.use(
+  helmet({
+      contentSecurityPolicy: false,
+  })
+);
+
 
 const bodyParser = require("body-parser");
 
@@ -23,7 +29,7 @@ app.get("/music/:query/:pageNumber", async (req, res) => {
   res.json(json);
 });
 
-//get method for musicVideos
+//get method for music videos
 app.get("/videos/:query/:pageNumber", async (req, res) => {
   const query = req.params.query;
   const pageNumber = req.params.pageNumber;
@@ -45,7 +51,7 @@ app.get("/movies/:query/:pageNumber", async (req, res) => {
   res.json(json);
 });
 
-//get method for audioBook
+//get method for audiobooks
 app.get("/audiobooks/:query/:pageNumber", async (req, res) => {
   const query = req.params.query;
   const pageNumber = req.params.pageNumber;
@@ -66,7 +72,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 
   app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
   });
 }
 
