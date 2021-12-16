@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="App"
+>
+  <div>
+    <header
+      className="App-header"
+    >
+      <nav
+        className="navbar navbar-expand-sm navbar-light bg-light"
+      >
+        <div
+          aria-expanded={null}
+          className="justify-content-center navbar-collapse collapse"
+        >
+          <span
+            className="nav-text navbar-text"
+          >
+            <div
+              className="mr-auto navbar-nav"
+              onKeyDown={[Function]}
+            >
+              <a
+                className="link"
+                href="/"
+                onClick={[Function]}
+              >
+                Home
+              </a>
+              <a
+                className="link"
+                href="/music"
+                onClick={[Function]}
+              >
+                Music
+              </a>
+              <a
+                className="link"
+                href="/videos"
+                onClick={[Function]}
+              >
+                Videos
+              </a>
+              <a
+                className="link"
+                href="/movies"
+                onClick={[Function]}
+              >
+                Movies
+              </a>
+              <a
+                className="link"
+                href="/audiobooks"
+                onClick={[Function]}
+              >
+                Audio Books
+              </a>
+            </div>
+          </span>
+        </div>
+      </nav>
+      <div
+        className="welcome-text"
+      >
+        <h1>
+          iTunes search API
+        </h1>
+      </div>
+    </header>
+  </div>
+  <div
+    className="home-container"
+  >
+    <div
+      className="home-wrap"
+    >
+      <h1>
+        Music
+      </h1>
+      <img
+        alt="music"
+        className="img"
+        height="280"
+        src="./music.jpg"
+        width="30%"
+      />
+    </div>
+    <br />
+    <div
+      className="home-wrap"
+    >
+      <h1>
+        Videos
+      </h1>
+      <img
+        alt="video"
+        className="img"
+        height="310"
+        src="./video.jpg"
+        width="30%"
+      />
+    </div>
+    <br />
+    <div
+      className="home-wrap"
+    >
+      <h1>
+        Movies
+      </h1>
+      <img
+        alt="movie"
+        className="img"
+        height="310"
+        src="./movie.jpg"
+        width="30%"
+      />
+    </div>
+    <br />
+    <div
+      className="home-wrap"
+    >
+      <h1>
+        Audio books
+      </h1>
+      <img
+        alt="audio"
+        className="img"
+        height="310"
+        src="./audiobook.jpg"
+        width="30%"
+      />
+    </div>
+  </div>
+</div>
+`;
